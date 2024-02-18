@@ -4,13 +4,37 @@
 
 
 
+- [演示](#演示)
+- [函数原型](#函数原型)
+  - [AddCommand](#addcommand)
+  - [AddMenuItemA](#addmenuitema)
+  - [AddMenuItemB](#addmenuitemb)
+  - [AttackMenuExpand](#attackmenuexpand)
+  - [AddTextBox](#addtextbox)
+  - [AddSelectFileButton](#addselectfilebutton)
+  - [Addlabel](#addlabel)
+  - [AddTextBox](#addtextbox-1)
+  - [AddComBox](#addcombox)
+  - [AddButton](#addbutton)
+  - [AddMenuItemsAsSubItems](#addmenuitemsassubitems)
+  - [CreateForm](#createform)
+  - [ExecuteAssembly](#executeassembly)
+  - [Inlineassembly](#inlineassembly)
+  - [GetFileName](#getfilename)
+  - [MessageboxA](#messageboxa)
+  - [MenuStripExpand](#menustripexpand)
+  - [Nopowershell](#nopowershell)
+  - [Upload](#upload)
+  - [PEloader](#peloader)
+  - [Sessionlog](#sessionlog)
+- [lua  Demo](#lua--demo)
 
 
-
+# 演示
 
 <video src="https://private-user-images.githubusercontent.com/89376703/305687743-fb39df88-0f29-4359-9cd4-fc4bfa698270.mp4" width="640" height="480" controls></video>
 
-# 一.函数原型
+# 函数原型
 
 ## AddCommand
 
@@ -258,7 +282,7 @@ public void Sessionlog(string conText)
 
 
 
-# 二.lua  Demo
+# lua  Demo
 
 lua Plugins demo
 
