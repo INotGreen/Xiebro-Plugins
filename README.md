@@ -282,6 +282,8 @@ public void Sessionlog(string conText)
 
 lua Plugins demo
 
+外部工具下载链接 :[SharpKatz](https://github.com/b4rtik/SharpKatz)、[fscan](https://github.com/shadow1ng/fscan)
+
 ```lua
 local function SchTaskForm()
     local IsOK = false
@@ -376,5 +378,5 @@ AddMenuItem()
 
 
 
-外部工具下载链接 :[SharpKatz](https://github.com/b4rtik/SharpKatz)、[fscan](https://github.com/shadow1ng/fscan)
+
 
