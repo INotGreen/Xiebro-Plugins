@@ -32,8 +32,6 @@
 
 # 演示
 
-<video src="https://private-user-images.githubusercontent.com/89376703/305687743-fb39df88-0f29-4359-9cd4-fc4bfa698270.mp4" width="640" height="480" controls></video>
-
 # 函数原型
 
 ## AddCommand
