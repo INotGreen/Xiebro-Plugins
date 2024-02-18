@@ -278,11 +278,7 @@ public static void PEloader(
 public void Sessionlog(string conText)
 ```
 
-
-
-
-
-# lua  Demo
+# lua  示例
 
 lua Plugins demo
 
@@ -306,7 +302,7 @@ local function SchTaskForm()
 
         else
             IsOK = false
-            MessageBoxA("adas")
+            MessageBoxA("Empty input detected")
         end
     end)
 
@@ -341,7 +337,7 @@ MenuStripExpand("asdasd",null,null)
 
 
 local function Privileg()
-    InlineAssembly("Plugins\\BypassUAC.exe", "calc")
+    InlineAssembly("Plugins\\BypassUAC-ETV.exe", "calc")
 end
 
 local function RunPEload()
@@ -352,16 +348,16 @@ end
 
 local function AddMenuItem()
 
-    AddWindowsMenuC("渗透插件", null)
-    AddWindowsMenuC("信息收集", null)
-    AddWindowsMenuC("抓取浏览器密码", null)
-    AddWindowsMenuC("持久化控制", null)
-    AddWindowsMenuC("任务计划", null)
-    AddWindowsMenuD("隐藏安装", "", SchTaskForm)
-    AddWindowsMenuD("权限提升",null,function ()
-        Sessionlog("Executing program..")
+    AddMenuItemA("渗透插件", null)
+    AddMenuItemA("信息收集", null)
+    AddMenuItemA("抓取浏览器密码", null)
+    AddMenuItemA("持久化控制", null)
+    AddMenuItemA("任务计划", null)
+    AddMenuItemB("隐藏安装", "", SchTaskForm)
+    AddMenuItemB("权限提升",null,function ()
+        Sessionlog("Message")
     end)
-    AddWindowsMenuD("4.0","",RunPEload)
+    AddMenuItemB("4.0","",RunPEload)
     local menuStructure = {
         ["渗透插件"] = {"信息收集", "持久化控制","权限提升"},
         ["信息收集"] = {"抓取浏览器密码"},
@@ -374,8 +370,11 @@ local function AddMenuItem()
     end
 end
 
-
 AddMenuItem()
 
 ```
+
+
+
+外部工具下载链接 :[SharpKatz](https://github.com/b4rtik/SharpKatz)、[fscan](https://github.com/shadow1ng/fscan)
 
