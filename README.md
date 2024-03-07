@@ -179,6 +179,24 @@ public ComboBox AddComBox(
 
 
 
+
+
+## Assemblyloadbase64
+
+```C#
+ public void Assemblyloadbase64(string base64stub)
+```
+
+注意：该函数在C#中注册，功能为加载.net exe文件，在lua中调用时，您需要将.net 程序集转为base64编码
+
+powershell一句话转为base64编码，您只需要修改.net exe的路径
+
+```powershell
+[Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\Users\Lenovo\Desktop\Client2.exe")) | Out-File "a.txt"
+```
+
+
+
 ## CreateForm
 
 ```C#
@@ -189,6 +207,8 @@ public ComboBox AddComBox(
  )
 ```
 
+创建一个窗体
+
 ## ExecuteAssembly
 
 ```C#
@@ -198,7 +218,7 @@ public static void ExecuteAssembly(
 )
 ```
 
-
+创建一个子进程，将.net程序集通过注入的方式在该子进程中加载，并将结果通过管道的形式传回服务端
 
 ## Inlineassembly
 
@@ -209,7 +229,7 @@ public static void ExecuteAssembly(
  )
 ```
 
-
+以内联的方式加载.net 程序集，更加OPSEC，但是同时也增大了程序的内存风险
 
 ## GetFileName
 
@@ -217,7 +237,7 @@ public static void ExecuteAssembly(
 public string GetFileName(string filePath)
 ```
 
-
+获取路径中的文件名
 
 ## MessageboxA
 
@@ -237,7 +257,7 @@ public void MenuStripExpand(
 )
 ```
 
-
+顶部菜单栏扩展
 
 ## Nopowershell
 
