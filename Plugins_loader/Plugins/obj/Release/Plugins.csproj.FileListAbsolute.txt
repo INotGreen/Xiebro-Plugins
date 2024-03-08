@@ -1,0 +1,13 @@
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\bin\Release\Plugins.exe.config
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\bin\Release\Plugins.exe
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\bin\Release\Plugins.pdb
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\bin\Release\dnlib.xml
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\obj\Release\Plugins.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\obj\Release\Plugins.Form1.resources
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\obj\Release\Plugins.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\obj\Release\Plugins.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\obj\Release\Plugins.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\obj\Release\Plugins.csproj.Fody.CopyLocal.cache
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\obj\Release\Plugins.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\obj\Release\Plugins.exe
+C:\Users\Lenovo\Desktop\Plugins_loader\Plugins\obj\Release\Plugins.pdb
