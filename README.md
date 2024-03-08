@@ -40,7 +40,9 @@ internal static class Program
 
 ## 2.扩展Session 命令
 
-![image-20240308134300864](Image\\image-20240308134300864.png)
+
+
+<img src="Image\\image-20240308134300864.png"  />
 
 
 
