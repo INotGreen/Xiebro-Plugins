@@ -1,11 +1,16 @@
-
-目录
+# 目录
 
 - [1.扩展外部窗体](#1扩展外部窗体)
 - [2.扩展Session 命令](#2扩展session-命令)
 - [3.扩展功能菜单栏](#3扩展功能菜单栏)
 - [4.菜单栏整理](#4菜单栏整理)
 - [5.使用内置API扩展窗体](#5使用内置api扩展窗体)
+
+
+
+在编写插件时，请仔细参考函数原型：[XiebroC2-PluginsFunctions](https://github.com/INotGreen/Xiebro-Plugins/blob/main/Function.md)
+
+
 
 ## 1.扩展外部窗体
 
@@ -77,11 +82,14 @@ AddMenuItemA("Pentest", null)
 AddMenuItemB("GetIPInfo", "", function() Nopowershell("ipconfig", "1") end)
 ```
 
-AddMenuItemB比AddMenuItemA多一个点击事件的参数（类似回调函数），lua中似乎无法支持重载，因此我用函数的A和B进行区分
+- AddMenuItemB比AddMenuItemA多一个点击事件的参数(类似回调函数)，lua中似乎无法支持重载，因此我用函数的A和B进行区分。
 
-Nopowershell可以在内存中执行非托管的powershell而无需启动Powershell.exe进程，实际上你可以参考[nopowershell](https://github.com/INotGreen/Nopowershell)的代码例子
 
-这里值得注意的是Nopowershell执行是否要创建子进程取决于Profile.json中的参数配置，如果Fork为flase则为无进程执行powershell
+- Nopowershell可以在内存中执行非托管的powershell而无需启动Powershell.exe进程，实际上你可以参考[nopowershell](https://github.com/INotGreen/Nopowershell)的代码例子。
+
+
+- 值得注意的是Nopowershell执行是否要创建子进程取决于Profile.json中的参数配置，如果Fork为flase则为无进程执行powershell
+
 
 ```json
 {
