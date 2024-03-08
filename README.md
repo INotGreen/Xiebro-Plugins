@@ -12,3 +12,10 @@ xiebroC2提供了简单的插件接口，它可以降低插件编写的门槛，
 
 
 
+将Winform .Net程序转成XiebroC2的lua插件
+
+```powershell
+ Import-Module .\Convert-NetToLua.ps1
+ Convert-NetToLua -infile .\Plugins.exe -Output a.lua -Name loader
+```
+
