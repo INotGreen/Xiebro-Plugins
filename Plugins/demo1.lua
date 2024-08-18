@@ -32,4 +32,3 @@ local function SchTaskForm()
     end
 end
 
-
