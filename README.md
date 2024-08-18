@@ -14,4 +14,4 @@ Manage->Plugins->Load，加载Main.lua即可
 
 载Sesion中你会得到更多得命令
 
-![image-20240818163749325](../../../AppData/Roaming/Typora/typora-user-images/image-20240818163749325.png)
+![image-20240818163749325](../../XieBro-v3.1/ClientGo/Plugins/Image/image-20240818163749325.png)
