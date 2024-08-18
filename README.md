@@ -10,7 +10,7 @@
 git clone https://github.com/INotGreen/Xiebro-Plugins.git
 ```
 
-Manage->Plugins->Load，加载Main.lua即可
+Manage->Plugins->Load，加载main.lua即可
 
 载入Sesion中你会得到更多得命令
 
