@@ -5,5 +5,5 @@ AddCommand_W(
     SweetPotato,
     "execute-assembly",
     "levate service privileges to System",
-    "SweetPotato -h"
+    "SweetPotato <FilePath>"
 );
