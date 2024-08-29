@@ -131,7 +131,7 @@ local function AddMenuItem()
     AddMenuItemA("Registry", null)
     AddMenuItemB("Install", null,RegistryForm)
     AddMenuItemB("HideInstall", "", RegistryForm)
-    AddMenuItemB("Privilege", null)
+    AddMenuItemA("Privilege", "")
     AddMenuItemA("4.0", null)
     local menuStructure = {
         ["Pentest"] = { "CollectInfo", "Persistence", "Privilege" }, --一级菜单
