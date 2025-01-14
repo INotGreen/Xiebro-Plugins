@@ -1,10 +1,10 @@
 function Convert-ExeToBase64Lua {
     param (
         [Parameter(Mandatory = $true)]
-        [string]$PePath, # .NET 可执行文件的路径
+        [string]$i, 
         
         [Parameter(Mandatory = $true)]
-        [string]$Output, # 输出的 Base64 文本文件路径
+        [string]$o, # 输出的 Base64 文本文件路径
 
         [string]$Command = "fscan", # Lua 中的命令名称，默认为 "fscan"
         [string]$LoadModule = "RunBin", # 模块名称，默认为 "RunBin"
@@ -13,14 +13,14 @@ function Convert-ExeToBase64Lua {
     )
 
     # 检查输入文件路径是否有效
-    if (-not (Test-Path -Path $PePath)) {
-        Write-Host "Error: The input file path '$PePath' does not exist."
-        return
-    }
+    # if (-not (Test-Path -Path $i)) {
+    #     Write-Host "Error: The input file path '$i' does not exist."
+    #     return
+    # }
 
     # 读取 .exe 文件内容
     try {
-        $fileBytes = [System.IO.File]::ReadAllBytes($PePath)
+        $fileBytes = [System.IO.File]::ReadAllBytes($i)
     }
     catch {
         Write-Host "Error: Failed to read the input file. $_"
@@ -55,7 +55,7 @@ AddCommand_W(
 "@
 
     try {
-        Set-Content -Path $Output -Value $context
+        Set-Content -Path $o -Value $context
         Write-Host "The file was successfully compressed and converted to Base64 and saved in $OutputFilePath"
     }
     catch {
@@ -64,4 +64,4 @@ AddCommand_W(
 }
 
 # 示例调用函数
-#Convert-ExeToBase64Lua -PePath "a.bin" -Output "fscan.lua"
+Convert-ExeToBase64Lua -i "C:\Users\admin\Desktop\mimikatz.exe" -o "mimikatz.lua" -Command "Mimikatz" -LoadModule "inline-execute" -Description "Get windows password credentials" -Usage "Mimikatz <args>"

