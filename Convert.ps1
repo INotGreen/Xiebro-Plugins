@@ -64,4 +64,4 @@ AddCommand_W(
 }
 
 # 示例调用函数
-Convert-ExeToBase64Lua -i "C:\Users\admin\Desktop\mimikatz.exe" -o "mimikatz.lua" -Command "Mimikatz" -LoadModule "inline-execute" -Description "Get windows password credentials" -Usage "Mimikatz <args>"
+#Convert-ExeToBase64Lua -i "C:\Users\admin\Desktop\mimikatz.exe" -o "mimikatz.lua" -Command "Mimikatz" -LoadModule "inline-execute" -Description "Get windows password credentials" -Usage "Mimikatz <args>"
