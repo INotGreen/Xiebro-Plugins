@@ -56,12 +56,12 @@ Convert-ExeToBase64Lua -i "C:\Users\admin\Desktop\mimikatz.exe" -o "mimikatz.lua
 参数解释
 
 ```lua
--i :选择输入的文件
--o:输出的文件
--Command:命令的名称
--LoadModule:加载模式
--Description:描述
--Usage:使用方法
+-i:            选择输入的文件
+-o:            输出的文件
+-Command:      命令的名称
+-LoadModule:   加载模式
+-Description:  描述
+-Usage:        使用方法
 ```
 
 
