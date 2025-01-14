@@ -18,8 +18,6 @@ Manage->Plugins->Load，加载main.lua即可
 
 
 
-项目持续进行中。。。。
-
 ## 工具
 
 目前已经扩展下面的工具,全部采用无文件落地的方式进行内存加载
@@ -83,9 +81,9 @@ AddCommand_A(
 这里的LoadModule(加载模式)有四种
 
 ```lua
-inline-execute           --内联加载C/C++/go/rust的exe文件
-inline-execute-bin           --内联加载C/C++/go/rust的bin文件
-inline-assembly	         --内联加载.net文件
-execute-assembly         --Fork&&Run模式(创建子进程)进行内存加载.net文件
+inline-execute                                     --内联加载C/C++/go/rust的exe文件
+inline-execute-bin                                 --内联加载C/C++/go/rust的bin文件
+inline-assembly	                                   --内联加载.net文件
+execute-assembly                                   --Fork&&Run模式(创建子进程)进行内存加载.net文件
 ```
 
