@@ -39,7 +39,7 @@ Manage->Plugins->Load，加载main.lua即可
 
 
 
-XiebroC2的插件做到极度的简洁化，几乎使用一行代码你就可以为它添加一个外部命令
+XiebroC2的插件做到极度的简洁化，几乎只需一行代码你就可以为它添加一个外部命令
 
 用Convert.ps1脚本可以直接将C/C++/Go/rust/.net/Bin等PE直接转成lua脚本
 
