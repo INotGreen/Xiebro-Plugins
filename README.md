@@ -66,9 +66,7 @@ Convert-ExeToBase64Lua -i "C:\Users\admin\Desktop\mimikatz.exe" -o "mimikatz.lua
 
 
 
-用于添加外部命令的函数主要有两个，AddCommand_W和AddCommand_A的区别在于：AddCommand_A打包了exe的使用参数，例如你可以直接将想直接使用logonpassword 
-
-
+用于添加外部命令的函数主要有两个，AddCommand_W和AddCommand_A的区别在于：AddCommand_A打包了exe的使用参数，例如你可以直接使用logonpassword ，可以这样：
 
 ```lua
 AddCommand_A(
@@ -81,7 +79,7 @@ AddCommand_A(
 );
 ```
 
-
+如果不需要参数，则直接使用AddCommand_W
 
 ```lua
 AddCommand_W(
