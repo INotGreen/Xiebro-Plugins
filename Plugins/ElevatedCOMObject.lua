@@ -3,7 +3,7 @@ BypassUAC =
 AddCommand_W(
     "ElevatedCOMObject",
     BypassUAC,
-    "execute-assembly",
+    "inline-assembly",
     "BypassUAC",
     "ElevatedCOMObject <FilePath>"
 );

@@ -3,7 +3,7 @@ SweetPotato =
 AddCommand_W(
     "SweetPotato",
     SweetPotato,
-    "execute-assembly",
+    "inline-assembly",
     "levate service privileges to System",
     "SweetPotato <FilePath>"
 );

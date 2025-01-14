@@ -3,7 +3,7 @@ SharpScan =
 AddCommand_W(
     "SharpScan",
     SharpScan,
-    "execute-assembly",
+    "inline-assembly",
     "levate service privileges to System",
     "SharpScan -help"
 );

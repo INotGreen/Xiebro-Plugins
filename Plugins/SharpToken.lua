@@ -3,7 +3,7 @@ SharpToken =
 AddCommand_W(
     "SharpToken",
     SharpToken,
-    "execute-assembly",
+    "inline-assembly",
     "Switch User Permissions",
     "SharpToken"
 );
