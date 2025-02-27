@@ -4,7 +4,7 @@ SharpKatz =
 AddCommand_W(
     "SharpKatz",
     SharpKatz,
-    "execute-assembly",
+    "inline-assembly",
     "Steal domain login credentials",
     "SharpKatz -h"
 );

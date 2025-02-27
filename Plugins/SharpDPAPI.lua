@@ -3,7 +3,7 @@ SharpDPAPI =
 AddCommand_W(
     "SharpDPAPI",
     SharpDPAPI,
-    "execute-assembly",
+    "inline-assembly",
     "levate service privileges to System",
     "SharpDPAPI -h"
 );

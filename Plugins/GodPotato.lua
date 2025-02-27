@@ -3,7 +3,7 @@ GodPotato =
 AddCommand_W(
     "GodPotato",
     GodPotato,
-    "execute-assembly",
+    "inline-assembly",
     "levate service privileges to System",
     "GodPotato <FilePath>"
 );

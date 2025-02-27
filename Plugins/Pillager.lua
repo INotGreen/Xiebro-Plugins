@@ -3,7 +3,7 @@ Pillager =
 AddCommand_W(
     "Pillager",
     Pillager,
-    "execute-assembly",
+    "inline-assembly",
     "Grab browser passwords",
     "Pillager"
 );

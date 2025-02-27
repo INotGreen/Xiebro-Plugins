@@ -3,7 +3,7 @@ BadPotato =
 AddCommand_W(
     "BadPotato",
     BadPotato,
-    "execute-assembly",
+    "inline-assembly",
     "levate service privileges to System",
     "BadPotato <FilePath>"
 );

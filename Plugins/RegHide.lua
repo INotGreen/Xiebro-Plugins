@@ -3,7 +3,7 @@ RegHide =
 AddCommand_W(
     "RegHide",
     RegHide,
-    "execute-assembly",
+    "inline-assembly",
     "Adding a hidden registry key",
     "RegHide -h"
 );

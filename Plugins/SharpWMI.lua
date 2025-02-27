@@ -3,7 +3,7 @@ SharpWMI =
 AddCommand_W(
     "SharpWMI",
     SharpWMI,
-    "execute-assembly",
+    "inline-assembly",
     "Lateral movement based on port 135",
     "SharpWMI"
 );
